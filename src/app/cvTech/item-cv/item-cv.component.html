@@ -1,8 +1,9 @@
-<li class="list-group-item">
+<li class="list-group-item" (click)="selectPeronne()">
   <img
-    src="assets/images/rotating_card_profile3.png"
+    src="assets/images/{{ personne.path }}"
     width="100px"
     height="100px"
-    alt="janlawrence"
+    alt="{{ personne.firstname }}"
   />
+  {{ personne.firstname }} {{ personne.name }}
 </li>

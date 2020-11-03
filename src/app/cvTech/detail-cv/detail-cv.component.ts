@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Personne } from './../../model/Personne';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-detail-cv',
   templateUrl: './detail-cv.component.html',
-  styleUrls: ['./detail-cv.component.css']
+  styleUrls: ['./detail-cv.component.css'],
 })
 export class DetailCvComponent implements OnInit {
+  @Input() personne: Personne;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
