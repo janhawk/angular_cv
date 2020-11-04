@@ -9,7 +9,7 @@ export class Personne {
   constructor(
     id = 0,
     name = '',
-    firstName = '',
+    firstname = '',
     age = 0,
     path = '',
     cin = 1,
@@ -17,7 +17,7 @@ export class Personne {
   ) {
     this.id = id;
     this.name = name;
-    this.firstname = firstName;
+    this.firstname = firstname;
     this.age = age;
     this.path = path;
     this.cin = cin;

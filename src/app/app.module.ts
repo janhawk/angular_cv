@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,7 @@ import { ListeCvComponent } from './cvTech/liste-cv/liste-cv.component';
 import { ItemCvComponent } from './cvTech/item-cv/item-cv.component';
 import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { StyleComponent } from './directive/style/style.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +17,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CvComponent,
     ListeCvComponent,
     ItemCvComponent,
-    DetailCvComponent
+    DetailCvComponent,
+    StyleComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
