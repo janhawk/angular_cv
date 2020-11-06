@@ -1,0 +1,61 @@
+<h3>change team</h3>
+<p
+  [ngClass]="{
+    est: est,
+    barca: barca,
+    milan: milan
+  }"
+>
+  class works!
+</p>
+<button class="btn btn-danger" (click)="changeTeam()">Change team</button>
+
+<!-- Cette directive permet de modifier l’attribut class.
+Elle cohabite avec l’attribut class.
+Elle prend en paramètre
+Une chaine (string)
+Un tableau (dans ce cas il faut ajouter les [ ] donc [ngClass])
+Un objet (dans ce cas il faut ajouter les [ ] donc [ngClass])
+Elle utilise le property Binding. -->
+
+<h2>Custom attribut directive</h2>
+<div appHighlight>Test highligh directive</div>
+
+<!-- Afin de créer sa propre « attribut directive » il faut utiliser un HostBinding sur la propriété que vous voulez binder.
+Exemple :  @HostBinding('style.backgroundColor') bg:string="red";
+Si on veut associer un événement à notre directive on utilise un HostListner qu’on associe à un événement déclenchant une méthode.
+Exemple : @HostListener('mouseenter') mouseover(){  this.bg =this.highlightColor;}
+Afin d’utiliser le HostBinding et le HostListner il faut les importer du core d’angular
+
+Une directive est une classe permettant d’attacher un comportement aux éléments du DOM. Elle est décorée avec l’annotation @Directive.
+Apparait dans un élément comme un tag (comme le font les attributs).
+La documentation officielle d’Angular identifie trois types de directives :
+Les composants qui sont des directives avec des templates.
+Les directives structurelles qui changent l’apparence du DOM en ajoutant et supprimant des éléments.
+Les directives d’attributs (attribute directives) qui permettent de changer l’apparence ou le comportement d’un élément. -->
+<input *ngIf="show" type="text" class="form-control" appRainbow />
+
+<h3>Une directive structurelle</h3>
+<button class="btn btn-primary" (click)="show = !show">show</button>
+
+<!-- Une directive structurelle permet de modifier le DOM.
+
+Elles sont appliquées sur l’élément HOST.
+
+Elles sont généralement précédées par le préfix *.
+
+Les directives les plus connues sont :
+
+*ngIf
+
+*ngFor
+
+[ngSwitch] -->
+
+<ol class="list-group">
+  <li class="list-group-item" *ngFor="let team of teams">
+    {{ team }}
+  </li>
+</ol>
+
+<!-- *ngFor="let team of teams" permet d'afficher la list de team -->

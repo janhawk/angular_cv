@@ -1,3 +1,4 @@
+<h2>Change style</h2>
 <p [ngStyle]="{ ' color': 'white', backgroundColor: 'yellow' }">style works!</p>
 <!--  -->
 <p [ngStyle]="{ color: color, backgroundColor: bgColor, fontSize: size }">
@@ -10,8 +11,9 @@
   class="form-control"
   (change)="changeColor(colorInput.value)"
 /> -->
+<h3>change color</h3>
 <input type="text" class="form-control" [(ngModel)]="color" />
-
+<h3>change size</h3>
 <input
   type="number"
   #sizeInput
@@ -26,5 +28,6 @@
   class="form-control"
   (change)="changebgColor(bgColorInput.value)"
 /> -->
+<h3>change bgcolor</h3>
 <input type="text" class="form-control" [(ngModel)]="bgColor" />
 <!-- two way binding no need to bond on ts -->

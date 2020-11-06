@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class CvComponent implements OnInit {
   personnes: Personne[];
   selectedPersonne: Personne;
+
   constructor() {}
 
   ngOnInit(): void {

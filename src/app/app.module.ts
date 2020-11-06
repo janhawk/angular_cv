@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,9 @@ import { ItemCvComponent } from './cvTech/item-cv/item-cv.component';
 import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { StyleComponent } from './directive/style/style.component';
+import { ClassComponent } from './directive/class/class.component';
+import { HighlightDirective } from './directive/highlight.directive';
+import { RainbowDirective } from './directive/rainbow.directive';
 
 @NgModule({
   declarations: [
@@ -19,8 +23,17 @@ import { StyleComponent } from './directive/style/style.component';
     ItemCvComponent,
     DetailCvComponent,
     StyleComponent,
+    ClassComponent,
+    HighlightDirective,
+    RainbowDirective,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    CommonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
