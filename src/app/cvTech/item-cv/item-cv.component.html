@@ -1,9 +1,11 @@
 <li class="list-group-item" (click)="selectPeronne()">
   <img
-    src="assets/images/{{ personne.path }}"
+    src="assets/images/{{ personne.path | defaultImage }}"
     width="100px"
     height="100px"
     alt="{{ personne.firstname }}"
   />
-  {{ personne.firstname }} {{ personne.name }}
+  {{ personne.firstname | titlecase }} {{ personne.name | titlecase }}
 </li>
+
+<!-- pipe = | titlecase guide here https://angular.io/guide/pipes -->

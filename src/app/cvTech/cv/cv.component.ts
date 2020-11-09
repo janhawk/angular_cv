@@ -1,3 +1,4 @@
+import { PremierService } from './../../premier.service';
 import { Personne } from '../../model/Personne';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,7 +11,7 @@ export class CvComponent implements OnInit {
   personnes: Personne[];
   selectedPersonne: Personne;
 
-  constructor() {}
+  constructor(private premierService: PremierService) {}
 
   ngOnInit(): void {
     this.personnes = [
@@ -32,7 +33,10 @@ export class CvComponent implements OnInit {
         8888,
         'chomage'
       ),
+      new Personne(3, 'test', 'test', 35, '', 11111, 'test'),
     ];
+    // this.premierService.addData( data : 'data from cv component');
+    this.premierService.logger(this.personnes);
   }
 
   selectPersonne(personne): void {
