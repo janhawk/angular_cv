@@ -1,1 +1,25 @@
-<p>color works!</p>
+<app-fils
+  (sendRequestToData)="processReq($event)"
+  [filsProperty]="color"
+></app-fils>
+
+<h2>Binding</h2>
+<div [style.backgroundColor]="color">Color</div>
+
+<!-- property = backgroundColor et change
+methode = color et changeColor
+#inputColor = identifier un dom -->
+
+<input
+  #inputColor
+  (change)="changeColor(inputColor)"
+  type="text"
+  class="form-control"
+/>
+
+<!-- -comment faire du property binding style.backgroundColor
+-event binding avec change et appelé la method 'changeColor' qui va faire le traitement
+-identifier un element du DOM = Document Objet Model #inputColor, recuperer au niveau de code en passant dans cette element et identifiant avec le tag
+-utiliser l'evenement a cet element la 'changeColor'  pour changer une property qui est deja bindé pour faire en sort que la property bindé change -->
+
+<button class="form-control" (click)="loggerMesData()">log data</button>

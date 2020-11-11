@@ -1,3 +1,4 @@
+import { ColorComponent } from './color/color.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -15,7 +16,8 @@ import { ClassComponent } from './directive/class/class.component';
 import { HighlightDirective } from './directive/highlight.directive';
 import { RainbowDirective } from './directive/rainbow.directive';
 import { DefaultImagePipe } from './cvTech/default-image.pipe';
-import { ColorComponent } from './color/color.component';
+import { FilsComponent } from './fils/fils.component';
+import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { ColorComponent } from './color/color.component';
     RainbowDirective,
     DefaultImagePipe,
     ColorComponent,
+    FilsComponent,
+    EmbaucheComponent,
   ],
   imports: [
     BrowserModule,

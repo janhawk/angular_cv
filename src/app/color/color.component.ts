@@ -5,16 +5,25 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-color',
   templateUrl: './color.component.html',
   styleUrls: ['./color.component.css'],
+  providers: [PremierService],
 })
 export class ColorComponent implements OnInit {
   color = 'red';
+
+  changeColor(input): void {
+    console.log(input.value);
+    this.color = input.value;
+    input.value = '';
+  }
+
   constructor(private premierService: PremierService) {}
 
   ngOnInit(): void {}
-  processReq(messge: string): void {
-    alert(messge);
-  }
+
   loggerMesData(): void {
-    this.premierService.logger('test');
+    this.premierService.logger('data test');
+  }
+  processReq(message: any): void {
+    alert(message);
   }
 }

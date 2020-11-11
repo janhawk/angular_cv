@@ -1,0 +1,16 @@
+<p>fils works!</p>
+
+<!-- filsProperty Bindé une property du fils a partir du pere
+faire passer une parametre de pere a office
+communication du pere a fils -->
+<h2>interraction entre composants du fils vers le pere</h2>
+<button class="btn btn-danger" (click)="sendEvent()">Request money</button>
+<!-- ecouter et envoyer les evenements du fils a parent
+ce button qui se trouve dans le fils component qui appele la methode sendEvent()
+il va aller le sendRequestToData et faire afficher le message
+le parent color component va ecouter cette evenement et dés que l'evenement es declenché il va appeler la methode
+processReq avec la property event
+
+ca nouspermet d'injecter des nformation du parents au fils
+
+-->
