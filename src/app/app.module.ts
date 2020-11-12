@@ -1,3 +1,4 @@
+import { ROUTING } from './app.routing';
 import { ColorComponent } from './color/color.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -18,6 +19,7 @@ import { RainbowDirective } from './directive/rainbow.directive';
 import { DefaultImagePipe } from './cvTech/default-image.pipe';
 import { FilsComponent } from './fils/fils.component';
 import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
     ColorComponent,
     FilsComponent,
     EmbaucheComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +44,7 @@ import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
     NgbModule,
     FormsModule,
     CommonModule,
+    ROUTING,
   ],
   providers: [],
   bootstrap: [AppComponent],
