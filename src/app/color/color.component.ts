@@ -20,9 +20,8 @@ export class ColorComponent implements OnInit {
   constructor(
     private premierService: PremierService,
     private router: Router,
-    private activatedRoute: ActivatedRoute
-  ) // ActivatedRoute is a routing params par example http://localhost:4200/color/color u want to show,
-  {}
+    private activatedRoute: ActivatedRoute // ActivatedRoute is a routing params par example http://localhost:4200/color/color u want to show,
+  ) {}
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params: any) => {

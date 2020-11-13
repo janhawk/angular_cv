@@ -11,7 +11,7 @@ export class CvService {
       new Personne(
         1,
         'Jan',
-        'law',
+        'Lawrence',
         30,
         'rotating_card_profile2.png',
         8888,
@@ -31,5 +31,15 @@ export class CvService {
   }
   getPersonnes(): Personne[] {
     return this.personnes;
+  }
+  getPersonneById(id: number): Personne {
+    const personne = this.personnes.find((personne) => {
+      return personne.id == id;
+    });
+    return personne;
+    // Passer le paramètre à travers le tableau de routerLink
+    // Une autre méthode permet de passer le paramètre de la route
+    //  est en l’ajoutant comme un autre attribut du
+    //   tableau associé au routerLink
   }
 }

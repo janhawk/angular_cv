@@ -21,6 +21,7 @@ import { FilsComponent } from './fils/fils.component';
 import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
+import { DetailComponent } from './cvTech/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { RouterSimulatorComponent } from './router-simulator/router-simulator.co
     EmbaucheComponent,
     HeaderComponent,
     RouterSimulatorComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,

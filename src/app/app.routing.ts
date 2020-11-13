@@ -1,8 +1,14 @@
+import { DetailComponent } from './cvTech/detail/detail.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ColorComponent } from './color/color.component';
 import { CvComponent } from './cvTech/cv/cv.component';
 
 const APP_ROUTING: Routes = [
+  { path: 'cv/:id', component: DetailComponent },
+  // Passer le paramètre à travers le tableau de routerLink
+  // Une autre méthode permet de passer le paramètre de la route
+  //  est en l’ajoutant comme un autre attribut du
+  //   tableau associé au routerLink
   { path: 'cv', redirectTo: '/', pathMatch: 'full' },
   { path: '', component: CvComponent },
   { path: 'color/:default', component: ColorComponent },
