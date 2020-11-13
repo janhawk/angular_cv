@@ -20,6 +20,7 @@ import { DefaultImagePipe } from './cvTech/default-image.pipe';
 import { FilsComponent } from './fils/fils.component';
 import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
 import { HeaderComponent } from './header/header.component';
+import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { HeaderComponent } from './header/header.component';
     FilsComponent,
     EmbaucheComponent,
     HeaderComponent,
+    RouterSimulatorComponent,
   ],
   imports: [
     BrowserModule,
