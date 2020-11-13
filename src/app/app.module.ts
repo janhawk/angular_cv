@@ -22,6 +22,8 @@ import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
 import { HeaderComponent } from './header/header.component';
 import { RouterSimulatorComponent } from './router-simulator/router-simulator.component';
 import { DetailComponent } from './cvTech/detail/detail.component';
+import { AddCvComponent } from './cvTech/add-cv/add-cv.component';
+import { DeleteCvComponent } from './cvTech/delete-cv/delete-cv.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { DetailComponent } from './cvTech/detail/detail.component';
     HeaderComponent,
     RouterSimulatorComponent,
     DetailComponent,
+    AddCvComponent,
+    DeleteCvComponent,
   ],
   imports: [
     BrowserModule,
