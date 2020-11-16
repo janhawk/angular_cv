@@ -24,5 +24,5 @@ export class PremierService {
 // Déclarer le service dans le provider du module ou du composant
 // Passer le service comme paramètre du constructeur de l’entité qui en a besoin.
 
-// un service est une classe  qui va contenir du code metier qui va servir a l'ensemble
+// un service est une classe  qui va contenir du code metier qui va servir a l'ensemble.
 // des autres elements du ecosysteme angular.
