@@ -50,9 +50,9 @@ export const ROUTING = RouterModule.forRoot(APP_ROUTING);
 // Tout système de routing permet d’associer une route à un traitement
 
 // Angular SPA. Pourquoi parle-on de route ??
-// Séparer différentes fonctionnalités du système
-// Maintenir l’état de l’application
-// Ajouter des règles de protection
+// Séparer différentes fonctionnalités du système.
+// Maintenir l’état de l’application.
+// Ajouter des règles de protection.
 // Que risque t-on d’avoir si on n’utilise pas un système de routing ?
-// On ne peut plus rafraîchir notre page
-// Plus de Favoris
+// On ne peut plus rafraîchir notre page.
+// Plus de Favoris.
