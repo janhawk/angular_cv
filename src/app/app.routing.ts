@@ -1,3 +1,4 @@
+import { ErrorComponent } from './error/error.component';
 import { AddCvComponent } from './cvTech/add-cv/add-cv.component';
 import { DeleteCvComponent } from './cvTech/delete-cv/delete-cv.component';
 import { DetailComponent } from './cvTech/detail/detail.component';
@@ -25,6 +26,7 @@ const APP_ROUTING: Routes = [
   },
   { path: '', component: CvComponent },
   { path: 'color/:default', component: ColorComponent },
+  { path: '**', component: ErrorComponent },
   // routing example2
 
   // { path: 'cv', component: CvComponent },
