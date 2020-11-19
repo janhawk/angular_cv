@@ -17,7 +17,7 @@ const APP_ROUTING: Routes = [
       // children: [
       // children = 2 vision :
       // 1rst when i only need the son will show on another page and 2nd when u need
-      //  the son will be shown in the same page
+      //  the son will be shown in the same page.
       { path: '', component: CvComponent },
       { path: 'delete/:id', component: DeleteCvComponent },
       { path: 'add', component: AddCvComponent },
@@ -34,7 +34,7 @@ const APP_ROUTING: Routes = [
   // // Passer le paramètre à travers le tableau de routerLink
   // // Une autre méthode permet de passer le paramètre de la route
   // //  est en l’ajoutant comme un autre attribut du
-  // //   tableau associé au routerLink
+  // //   tableau associé au routerLink.
 
   // // { path: 'cv', redirectTo: '/', pathMatch: 'full' },
   // { path: 'cv/delete/:id', component: DeleteCvComponent },
