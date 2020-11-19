@@ -35,7 +35,7 @@ export class CvComponent implements OnInit {
     //     8888,
     //     'chomage'
     //   ),
-    //   new Personne(3, 'test', 'test', 35, '', 11111, 'test'),
+    //   new Personne(3,  'test', 'test', 35, '', 11111, 'test'),
     // ];
     // this.premierService.addData('data from cv component');
     // this.premierService.logger(this.personnes);

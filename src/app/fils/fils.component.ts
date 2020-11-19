@@ -18,6 +18,6 @@ export class FilsComponent implements OnInit {
     );
   }
   sendEvent(): void {
-    this.sendRequestToData.emit(`Send me money`);
+    this.sendRequestToData.emit(`Send me money some`);
   }
 }
