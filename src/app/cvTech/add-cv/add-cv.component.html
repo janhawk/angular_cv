@@ -21,7 +21,14 @@
   <input id="cin" type="text" ngModel name="cin" class="form-control" />
 
   <label for="path">Path</label>
-  <input id="path" type="text" ngModel name="path" class="form-control" />
+  <input
+    required
+    id="path"
+    type="text"
+    ngModel
+    name="path"
+    class="form-control"
+  />
 
   <button class="btn btn-primary" (click)="addPersonne(formulaire)">
     Envoyer
