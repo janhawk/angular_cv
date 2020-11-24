@@ -8,7 +8,11 @@
     name="email"
     class="form-control"
     id="email"
+    #inputMail="ngModel"
   />
+  <div class="alert alert-danger" *ngIf="inputMail.invalid && inputMail.dirty">
+    Email not valid!
+  </div>
   <label for="pwd">Password</label>
   <input
     required
@@ -20,7 +24,7 @@
     #pwdInput="ngModel"
     id="pwd"
   />
-  <div class="alert alert-danger" *ngIf="pwdInput.invalid">
+  <div class="alert alert-danger" *ngIf="pwdInput.invalid && pwdInput.touched">
     Password 4minimun
   </div>
   <!-- ngIf = si c'est pas valide donc faire afficher l'erreur -->
