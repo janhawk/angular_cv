@@ -16,8 +16,14 @@
     ngModel
     name="password"
     class="form-control"
+    minlength="4"
+    #pwdInput="ngModel"
     id="pwd"
   />
+  <div class="alert alert-danger" *ngIf="pwdInput.invalid">
+    Password 4minimun
+  </div>
+  <!-- ngIf = si c'est pas valide donc faire afficher l'erreur -->
   <button
     type="button"
     [disabled]="loginFormulaire.invalid"
