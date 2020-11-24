@@ -42,4 +42,8 @@ export class CvService {
     //  est en l’ajoutant comme un autre attribut du
     //   tableau associé au routerLink
   }
+  addPersonne(personne: Personne): void {
+    personne.id = this.personnes[this.personnes.length - 1].id + 1;
+    this.personnes.push(personne);
+  }
 }
