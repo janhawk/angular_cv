@@ -22,3 +22,6 @@ export class HttpComponent implements OnInit {
     );
   }
 }
+
+// http client = communiquer avec les Api externe
+// j'ai fais des requetes http avec des api externe
