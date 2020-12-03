@@ -1,12 +1,15 @@
+import { HttpClient } from '@angular/common/http';
 import { Personne } from './../model/Personne';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CvService {
   private personnes: Personne[];
-  constructor() {
+  link = 'http://localhost:3000/api/n';
+  constructor(private http: HttpClient) {
     this.personnes = [
       new Personne(
         1,
@@ -29,7 +32,10 @@ export class CvService {
       new Personne(3, 'test', 'test', 35, '', 11111, 'test'),
     ];
   }
-  getPersonnes(): Personne[] {
+  getPersonnes(): Observable<Personne[]> {
+    return this.http.get<Personne[]>(this.link);
+  }
+  getFakePersonnes() {
     return this.personnes;
   }
   getPersonneById(id: number): Personne {
